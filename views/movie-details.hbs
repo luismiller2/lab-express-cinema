@@ -1,0 +1,16 @@
+<h2>Movie Details</h2>
+
+<p>{{foundMovie.title}}</p>
+<p>{{foundMovie.director}}</p>
+<img src={{foundMovie.image}}>
+
+{{#each foundMovie.stars}}
+<li>{{this}}</li>
+{{/each}}
+
+<p>{{foundMovie.description}}</p>
+<p>{{foundMovie.showtimes}}</p>
+
+
+  <hr />
+  <a href="/views/movies">All Movies</a>
